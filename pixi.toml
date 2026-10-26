@@ -1,0 +1,29 @@
+[workspace]
+authors = ["Dan Criveanu <dan.criveanu25@gmail.com>"]
+channels = ["conda-forge"]
+name = "workflow_development"
+platforms = ["linux-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+vina = "*"
+
+[pypi-dependencies]
+nglview = ">=4.0.1, <5"
+mdanalysis = ">=2.10.0, <3"
+pdb2pqr = ">=3.7.1, <4"
+pdbfixer = ">=1.12.0, <2"
+pandas = ">=3.0.3, <4"
+numpy = "*"
+tqdm = ">=4.68.3, <5"
+scikit-learn = ">=1.9.0, <2"
+annalog = ">=1.0.6, <2"
+useful-rdkit-utils = ">=1.0, <2"
+meeko = ">=0.7.1, <0.8"
+gemmi = ">=0.7.5, <0.8"
+torch = ">=2.11.0, <3"
+torchvision = ">=0.26.0, <0.27"
+molscrub = { git = "https://github.com/forlilab/molscrub.git" }
